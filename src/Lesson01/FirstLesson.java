@@ -1,3 +1,5 @@
+package Lesson01;
+
 import java.io.PrintStream;
 
 public class FirstLesson {
