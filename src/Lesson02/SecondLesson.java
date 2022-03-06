@@ -56,7 +56,7 @@ public class SecondLesson {
         } else System.out.println("Ошибка ввода данных");
 
         if (month >= 1 && month <= 12) {
-            if (month > 0 || month > 11) System.out.println("Зима");
+            if (month < 3 || month > 11) System.out.println("Зима");
             else if (month > 8) System.out.println("Осень");
             else if (month > 5) System.out.println("Лето");
             else System.out.println("Весна");
@@ -91,18 +91,18 @@ public class SecondLesson {
 
         double sum = 1000;
         int saleCode = 4318;
-        switch (saleCode){
+        switch (saleCode) {
             case 4525:
-                sum = sum - sum*0.3;
+                sum = sum - sum * 0.3;
                 break;
             case 6424:
             case 7012:
-                sum = sum - sum*0.2;
+                sum = sum - sum * 0.2;
                 break;
             case 7647:
             case 9011:
             case 6612:
-                sum = sum - sum*0.1;
+                sum = sum - sum * 0.1;
                 break;
             default:
                 System.out.println("Скидка не предусмотрена");
