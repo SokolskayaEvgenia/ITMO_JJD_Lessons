@@ -1,6 +1,4 @@
-package Lesson01;
-
-import java.io.PrintStream;
+package lesson01;
 
 public class FirstLesson {
 //    однострочный комметарий
