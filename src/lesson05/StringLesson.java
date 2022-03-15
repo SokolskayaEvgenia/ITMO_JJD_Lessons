@@ -68,7 +68,7 @@ public class StringLesson {
         // Сравнение строк
         // Строки через == не сравниваем, сравниваются ссылки на объект (характерно для всех ссылочных типов)
 
-        System.out.println(string1.equals(string2));// string1 сравниваем с string2 -> true
+        System.out.println(string1.equals(string2));// string1 сравниваем с string2 -> true // Since: 1.4
         System.out.println("строка".equals(string2)); // false - регистр учитывается
         System.out.println("строка".equalsIgnoreCase(string2)); // true - без учета регистра
 
@@ -92,7 +92,7 @@ public class StringLesson {
         concatString = string1.concat(" :: ").concat(string2);
         System.out.println(concatString);
 
-        concatString = String.join(" :: ", string2, string1);
+        concatString = String.join(" :: ", string2, string1); //Since: 1.8
         System.out.println(concatString);
 
         concatString = "";
@@ -103,8 +103,8 @@ public class StringLesson {
         System.out.println(concatString);*/
 
         // Складывать строки без создания новых объектов позволяют
-        //StringBuilder - работает быстрее, в многопоточных приложениях могут быть проблемы
-        //StringBuffer - потокобезопасный и может использоваться в многопоточных приложениях
+        //StringBuilder - работает быстрее, в многопоточных приложениях могут быть проблемы. Since: 1.5
+        //StringBuffer - потокобезопасный и может использоваться в многопоточных приложениях. Since: 1.0
 
         concatString = "Начало строки ";
         StringBuilder sb = new StringBuilder(concatString); // можно ничего не передавать (склейка начнется с пустоты)
@@ -132,12 +132,12 @@ public class StringLesson {
         newString = langs.replaceFirst(", ", " - "); //Since: 1.4
         System.out.println(newString);
 
-        newString = langs.replace(", ", " - "); // не поддержит регулярные выражения
+        newString = langs.replace(", ", " - "); //Since: 1.5 // не поддерживает регулярные выражения
         System.out.println(newString);
 
-        // contains - содержит ли строка конкретную последовательность символов
+        // contains - содержит ли строка конкретную последовательность символов. Since: 1.5
         System.out.println(langs.contains("th"));// true
-        // startWith проверяет начинается ли строка указанной последовательности символов
+        // startWith проверяет начинается ли строка указанной последовательности символов. Since: 1.0
         // зависит от регистра
         System.out.println(langs.startsWith("j")); //false
         // endsWith проверяет оканчивается ли строка указанной последовательности символов
