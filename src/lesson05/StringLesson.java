@@ -145,5 +145,11 @@ public class StringLesson {
         System.out.println(langs.endsWith("Script")); //
         System.out.println(langs.startsWith("av",1)); //true
 
+        String name = "Иван";
+        String surname = "Петров";
+        String fullName1 = name+" "+surname; //конкатенация на моменте выполнения
+        String fullName2 = "Иван"+" "+"Петров"; //конкатенация во время компиляции
+        System.out.println(fullName1);
+        System.out.println(fullName2);
     }
 }
