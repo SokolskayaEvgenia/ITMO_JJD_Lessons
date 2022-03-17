@@ -46,5 +46,13 @@ public class Book {
     public Author getAuthor() {
         return author;
     }
+
+    public String toString() {
+        return "Book{" +
+                "title='" + title + '\'' +
+                ", pageCount=" + pages +
+                ", author=" + author +
+                '}';
+    }
 }
 
