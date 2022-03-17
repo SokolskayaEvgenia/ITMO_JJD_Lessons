@@ -19,4 +19,11 @@ public class Author {
         //прерывает работу метода, инструкции после return не будут выполнены
         return name + " " + surname;
     }
+
+    public String toString() {
+        return "Author{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                '}';
+    }
 }
