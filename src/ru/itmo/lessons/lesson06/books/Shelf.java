@@ -40,4 +40,12 @@ public class Shelf {
             addBook(book); // вызов метода addBook(Book book)
         }
     }
+
+    @Override
+    public String toString() {
+        return "Shelf{" +
+                "color='" + color + '\'' +
+                ", books=" + Arrays.toString(books) +
+                '}';
+    }
 }
