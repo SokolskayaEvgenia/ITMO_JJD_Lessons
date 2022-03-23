@@ -70,6 +70,8 @@ public class Application {
         // 4. shelf.getBooks()[0].getAuthor() метод вернет ссылку на значение свойства author книги
         // 5. shelf.getBooks()[0].getAuthor().name получили значение свойства name автора
 
+        System.out.println(shelf.toString());
+
 
 
 
